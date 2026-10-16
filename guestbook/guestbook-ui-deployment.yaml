@@ -4,6 +4,7 @@ metadata:
   name: guestbook-ui
 spec:
   replicas: 2
+  escbashBroken: true
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -13,6 +14,7 @@ spec:
       labels:
         app: guestbook-ui
     spec:
+      escbashBroken" true
       containers:
         - image: gcr.io/google-samples/gb-frontend:v5
           name: guestbook-ui
